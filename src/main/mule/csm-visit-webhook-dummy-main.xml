@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="sFlow" doc:id="e24b1577-45ca-4827-9e9a-c80671f0d5cf" >
+		<http:listener doc:name="Listener" doc:id="a54a08be-8a5e-4abb-9ac3-c5350f54af93" config-ref="HTTP_Listener_config" path="/helloWorld"/>
+		<ee:transform doc:name="Transform Message" doc:id="d213c4ef-2cf8-4be0-b9df-e2b43f15d578" >
+			<ee:message >
+				<ee:set-payload ><![CDATA["Hello world!"]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>

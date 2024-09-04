@@ -1,0 +1,13 @@
+csm-marketing-visit-sapi:
+  credentials:
+    client_id: "![i3Yu5QcUafeMytO3DHd38yaVkK4TMk5h]"
+    client_secret: "![1Q2jnsUKNCXt1dagDmUbvcaOpzzpAFQlw3BS6bofa880SpCeC/Gh40zpFFMoZn3o]"
+
+csm-marketing-visit-papi:
+  credentials:
+    client_id: "![i3Yu5QcUafeMytO3DHd38yaVkK4TMk5h]"
+    client_secret: "![1Q2jnsUKNCXt1dagDmUbvcaOpzzpAFQlw3BS6bofa880SpCeC/Gh40zpFFMoZn3o]"
+    
+keystore:
+  KeyPassword: "![eNO6GslPRiKF/inXBNkYQQ==]"
+  Password: "![eNO6GslPRiKF/inXBNkYQQ==]"

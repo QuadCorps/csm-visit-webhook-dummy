@@ -1,0 +1,19 @@
+trigger:
+    - develop
+    - main
+name: 1.0.$(Rev:r)
+pool:
+    vmImage: ubuntu-latest
+
+resources:
+  repositories:
+    - repository: csm-mule-devops
+      name: QuadCorps/csm-mule-devops
+      type: github
+      ref: refs/heads/main
+      endpoint: QuadCorps
+
+stages:
+  - template: azure-pipelines/templates/build-and-release.yml@csm-mule-devops
+    parameters:
+      stageAppVariableGroup: 'csm-visit-webhook-dummy'

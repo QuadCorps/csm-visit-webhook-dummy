@@ -1,0 +1,25 @@
+api:
+  id: "18605679"
+
+connection:
+  timeout: "12000"
+
+port: "8092"
+    
+response:
+  timeout: "70000"
+  
+json:
+  logger:
+    application:
+      name: "exp-api-TO-CHANGE"
+      version: "1.0.0"
+      environmentName: "Development"
+      
+csm-marketing-visit-papi:
+  host: "mule-worker-internal-csm-marketing-visit-papi-dev.ir-e1.cloudhub.io"
+  port: "8092"
+
+csm-marketing-visit-sapi:
+  host: "mule-worker-internal-csm-marketing-visit-sapi-dev.ir-e1.cloudhub.io"
+  port: "8092"

@@ -1,0 +1,25 @@
+api:
+  id: "18605679"
+
+connection:
+  timeout: "12000"
+
+port: "8092"
+    
+response:
+  timeout: "70000"
+  
+json:
+  logger:
+    application:
+      name: "exp-api-TO-CHANGE"
+      version: "1.0.0"
+      environmentName: "Production"
+      
+prc-b2b-cjm:
+  host: "mule-worker-internal-prc-b2b-cjm.ir-e1.cloudhub.io"
+  port: "8092"
+
+sys-b2b-cjm:
+  host: "mule-worker-internal-sys-b2b-cjm.ir-e1.cloudhub.io"
+  port: "8092"

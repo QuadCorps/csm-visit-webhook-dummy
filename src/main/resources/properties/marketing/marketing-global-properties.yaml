@@ -1,0 +1,4 @@
+csm-marketing-visit-papi:
+  marketing:
+    status:
+      path: "api/v1/marketing/status
