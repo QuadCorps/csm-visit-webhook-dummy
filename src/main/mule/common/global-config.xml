@@ -13,6 +13,10 @@ http://www.mulesoft.org/schema/mule/cps http://www.mulesoft.org/schema/mule/cps/
 http://www.mulesoft.org/schema/mule/min-log http://www.mulesoft.org/schema/mule/min-log/current/mule-min-log.xsd
 http://www.mulesoft.org/schema/mule/eframework http://www.mulesoft.org/schema/mule/eframework/current/mule-eframework.xsd">
 
+<global-property doc:name="Global Env Property" doc:id="ca7c6af9-04a7-4f75-afba-f8cd81fc8d4a" name="env" value="local" />
+	<configuration-properties doc:name="Global Env Properties" doc:id="4438616c-3515-4e51-abf0-632faba24f1d" file="properties/global-${env}-properties.yaml" />
+	<configuration-properties doc:name="Global Properties" doc:id="398f9301-1fd7-49e5-96da-34c1c524ab74" file="properties/global-properties.yaml" />
+
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="02267294-aae8-467a-b8d0-198453972ca1" >
 		<http:listener-connection host="0.0.0.0" port="${port}" />
 	</http:listener-config>
