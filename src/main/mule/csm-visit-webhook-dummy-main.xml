@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<flow name="sFlow" doc:id="e24b1577-45ca-4827-9e9a-c80671f0d5cf" >
-		<http:listener doc:name="Listener" doc:id="a54a08be-8a5e-4abb-9ac3-c5350f54af93" config-ref="HTTP_Listener_config" path="/visithook"/>
+		<http:listener doc:name="Listener" doc:id="a54a08be-8a5e-4abb-9ac3-c5350f54af93" config-ref="HTTP_Listener_config" path="/visithook" allowedMethods="GET"/>
 		<logger level="INFO" doc:name="Logger" doc:id="139bd7e8-c097-44cb-b251-e7b31301686b" />
 		<logger level="INFO" doc:name="Logger" doc:id="6bf2dd0c-3153-46b0-b8da-3ca320698f41" message="#[payload]"/>
 	</flow>
